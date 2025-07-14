@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How to Install Vnish Firmware on Antminer S19K Pro</title>
+  <meta name="description" content="Step-by-step guide to installing Vnish firmware on Antminer S19K Pro for improved efficiency, overclocking, and monitoring."/>
+  <meta name="keywords" content="Vnish firmware, Antminer, crypto mining, ASIC, overclock, undervolt, power efficiency"/>
+  <meta name="author" content="Vnish Team"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      color: #333;
+    }
+    header img {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>How to Install Vnish Firmware on Antminer S19K Pro</h1>
+    <p><strong>Updated:</strong> July 2025<br><strong>Author:</strong> Vnish Team</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Introduction</h2>
+      <p>The Antminer S19K Pro is one of the most powerful ASIC miners on the market, but its stock firmware can be limiting. Installing Vnish custom firmware gives you full control over hash rate, power usage, and performance tuning — potentially boosting profits and improving miner stability.</p>
+      <p>This step-by-step guide will help you install Vnish firmware, check compatibility, and troubleshoot common issues.</p>
+    </section>
+
+    <section>
+      <h2>Why Choose Vnish Firmware?</h2>
+      <ul>
+        <li>✅ Advanced Overclocking & Underclocking</li>
+        <li>⚡ Power Efficiency (Low Power Modes)</li>
+        <li>🔧 Custom Fan & Temperature Controls</li>
+        <li>📈 Real-Time Monitoring</li>
+        <li>🤖 Telegram Bot Integration</li>
+        <li>🧰 More Stability, Better Profit Margins</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Installation Guide</h2>
+
+      <h3>Step 1: Check Your Control Board Type</h3>
+      <p>The S19K Pro comes with two types of control boards:</p>
+      <ul>
+        <li><strong>CVitek (CVI)</strong> – Newer models from 2024 onwards</li>
+        <li><strong>Amlogic (AML)</strong> – Older variants</li>
+      </ul>
+      <p><strong>Important:</strong> Vnish firmware for Amlogic and CVitek are different. Installing the wrong one can brick your miner.</p>
+      <p><strong>How to identify:</strong></p>
+      <ul>
+        <li>Look at the sticker on the control board</li>
+        <li>Or access dashboard → “System Info” → check hardware type</li>
+      </ul>
+
+      <h3>Step 2: Download the Correct Vnish Firmware</h3>
+      <p>Visit the official firmware repository: <a href="https://vnish.co.in" target="_blank">vnish.co.in</a></p>
+      <ul>
+        <li>✅ <code>https://vnish.co.in/downloads/vnish-official-s19kpro-cv-nand-v1.2.6-install.tar.gz</code> for CVItek</li>
+        <li>✅ <code>https://vnish.co.in/downloads/vnish-official-s19kpro-aml-nand-v1.2.6-install.tar.gz</code> for Amlogic</li>
+      </ul>
+      <p>Unzip the files and copy them to a blank FAT32-formatted SD card (minimum 8GB recommended).</p>
+
+      <h3>Step 3: Prepare the SD Card</h3>
+      <ul>
+        <li>Format SD card to FAT32</li>
+        <li>Copy all extracted files directly to the root of the SD card</li>
+        <li>Insert SD card into the miner’s control board</li>
+      </ul>
+      <p><strong>💡 Tip:</strong> Use a high-quality SD card (e.g., SanDisk) to avoid boot failures.</p>
+
+      <h3>Step 4: Flash the Firmware</h3>
+      <ul>
+        <li>Power OFF the miner</li>
+        <li>Insert the SD card</li>
+        <li>Power ON the miner</li>
+        <li>Wait 2–3 minutes; the red/green LEDs will flash</li>
+        <li>Miner will reboot automatically once flashing is complete</li>
+        <li>Remove SD card after first boot</li>
+      </ul>
+
+      <h3>Step 5: Access the Web Dashboard</h3>
+      <ul>
+        <li>Find your miner’s IP using Angry IP Scanner or your router admin panel</li>
+        <li>Access via browser: <code>http://192.168.x.x</code></li>
+      </ul>
+      <p><strong>Default Credentials:</strong><br>
+      Username: <code>root</code><br>
+      Password: <code>root</code></p>
+
+      <h3>Step 6: Configure and Auto-Tune</h3>
+      <ul>
+        <li>Go to “Miner Configuration”</li>
+        <li>Set your pool URL, worker name, and password</li>
+        <li>Navigate to “Auto-Tune” tab</li>
+        <li>Select mode: Efficiency / Balance / Performance</li>
+        <li>Click <strong>Start Auto-Tune</strong></li>
+      </ul>
+      <p><strong>🧠 Tip:</strong> Let it tune for at least 10 minutes before mining.</p>
+
+      <h3>Step 7: Enable Telegram Monitoring (Optional)</h3>
+      <ul>
+        <li>Enable Telegram Bot in the Vnish dashboard</li>
+        <li>Add bot token and chat ID</li>
+        <li>Set alerts for overheating, hash rate drops, or offline status</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Troubleshooting</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Problem</th>
+            <th>Fix</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Miner not booting</td>
+            <td>Try reflashing with a fresh SD card</td>
+          </tr>
+          <tr>
+            <td>No IP showing</td>
+            <td>Check Ethernet cable; try a different port</td>
+          </tr>
+          <tr>
+            <td>Stuck on red LED</td>
+            <td>Re-flash with rescue firmware</td>
+          </tr>
+          <tr>
+            <td>Control board not detected</td>
+            <td>Verify correct firmware version</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>Installing Vnish firmware on your Antminer S19K Pro unlocks a world of performance tuning, power savings, and remote control. Whether you’re running a single rig or a large mining operation, Vnish gives you a critical edge in uptime and profitability.</p>
+    </section>
+
+    <footer>
+      <p><strong>Need Help?</strong></p>
+      <ul>
+        <li>📱 Join our <a href="https://t.me/vnish_official_india" target="_blank">Telegram Support Group</a></li>
+        <li>💬 Comment below if you faced any issues</li>
+        <li>💻 Visit <a href="https://vnish.co.in/blog" target="_blank">vnish.co.in/blog</a> for more tutorials</li>
+      </ul>
+      <p><strong>Tags:</strong> #S19KPro, #VnishFirmware, #ASICMiner, #CryptoMining, #FirmwareTutorial</p>
+    </footer>
+  </main>
+</body>
+</html>
